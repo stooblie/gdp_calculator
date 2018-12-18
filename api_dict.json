@@ -1,28 +1,97 @@
 {
 "bea":
   {"uri": "https://www.bea.gov/api/data?"
-   , "params":
+    , "format":
       {
-        "method":
+        "json": "&ResultFormat=JSON"
+        , "xml": "&ResultFormat=XML"
+      }
+    , "key": "BEA_KEY"
+    , "title": "BEAAPI"
+    , "method":
+      {
+        "list_datasets":
           {
-            "list_datasets": "&method=GETDATASETLIST"
-            , "get_data": "&method=GetData"
-            , "get_parameters": "&method=getparameterlist"
-            , "get_parameter_values": "&method=GetParameterValues"
-            , "get_parameter_values_filtered": "&method=GetParameterValuesFiltered"
+            "handle": "&method=GETDATASETLIST"
+            , "parameters":
+              {
+                "required": ["UserID", "Method"]
+                , "optional": ["ResultFormat"]
+              }
           }
-        , "dataset_name": "&DataSetName="
-        , "table_name": "&TableName="
-        , "frequency": "&Frequency="
-        , "year": "&Year="
-    }
-   , "format":
-     {
-       "json": "&ResultFormat=JSON"
-       , "xml": "&ResultFormat=XML"
-     }
-   , "key": "BEA_KEY"
-   , "title": "BEAAPI"
+
+        , "get_parameters": "&method=getparameterlist"
+
+        , "get_parameter_values": "&method=GetParameterValues"
+
+        , "get_parameter_values_filtered": "&method=GetParameterValuesFiltered"
+
+        , "get_data":
+          {
+            "handle": "&method=GetData"
+            , "parameters":
+              {
+                "NIPA":
+                  {
+                    "required": ["TableName", "Frequency", "Year"]
+                  }
+                , "NIUnderlyingDetail":
+                  {
+                    "required": ["TableName", "Frequency", "Year"]
+                  }
+                , "MNEDI":
+                  {
+                    "required": ["DirectionOfInvestment", "Classification", "Year"]
+                    , "optional": ["SeriesID", "Country", "Industry", "GetFootNotes"]
+                  }
+                , "AMNE":
+                  {
+                    "required": ["DirectionOfInvestment", "Classification", "OwnershipLevel"
+                                  , "NonBankAffiliatesOnly", "Year"]
+                    , "optional": ["SeriesID", "Country", "Industry", "State", "GetFootNotes"]
+                  }
+                , "FixedAssets":
+                  {
+                    "required": ["TableID", "Year"]
+                  }
+                , "ITA":
+                  {
+                    "optional": ["Indicator", "AreaOrCountry", "Frequency", "Year"]
+                  }
+                , "IIP":
+                  {
+                    "optional": ["TypeOfInvestment", "Component", "Frequency", "Year"]
+                  }
+                , "GDPbyIndustry":
+                  {
+                    "required": ["TableID", "Frequency", "Year", "Industry"]
+                  }
+                , "RegionalIncome":
+                  {
+                    "required": ["TableName", "LineCode", "GeoFips"]
+                    , "optional": ["Year"]
+                  }
+                , "RegionalProduct":
+                  {
+                    "required": ["TableName", "LineCode", "GeoFips"]
+                    , "optional": ["Year"]
+                  }
+                , "InputOutput":
+                  {
+                    "required": ["TableID", "Year"]
+                  }
+                , "UnderlyingGDPbyIndustry":
+                  {
+                    "required": ["TableID", "Frequency", "Year", "Industry"]
+                  }
+                , "IntlServTrade":
+                  {
+                    "optional": ["TypeOfService", "TradeDirection", "Affiliation"
+                                  , "AreaOrCountry", "Year"]
+                  }
+              }
+          }
+      }
    }
 
 , "bls": null

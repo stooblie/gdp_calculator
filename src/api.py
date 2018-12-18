@@ -14,23 +14,33 @@ http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED',
 
 class Request():
 
-    def __init__(self, type, method, dataset_name=None, table_name=None, frequency=None, year=None, format='json'):
+    def __init__(self, type, method, parameters=None, format='json'):
         #Base parameters
         self.type = type
         self.uri = api_dict[type]['uri']
         self.method = api_dict[type]['params']['method'][method]
         self.key = '&UserID=' + os.environ[api_dict[type]['key']]
-        self.title = None
-
-        #Additional parameters
-        self.params = ''
-        for key, value in kwargs.items():
-            if value == None: continue
-            else:
-                self.params += api_dict[type]['params'][key] + value
         self.format = api_dict[type]['format'][format]
 
-        self.url = self.uri + self.key + self.method + self.params + self.format
+        #Additional parameters
+        #self.params = ''
+        #for key, value in kwargs.items():
+            #if value == None: continue
+            #else:
+                #self.params += api_dict[type]['params'][key] + value
+
+        #self.url = self.uri + self.key + self.method + self.format
+    def execute_method(self):
+        if self.method in ["list_datasets", "get_parameters", "get_parameter_values", "get_parameter_values_filtered"]:
+            get_metadata(self.method)
+        if self.method = 'get_data':
+            get_data()
+        else: pass
+
+    def get_metadata(self):
+        if self.method == "list_datasets":
+        if self.method ==:
+        if self.method ==:
 
     def get_data(self):
         print('URL: {}'.format(self.url))
