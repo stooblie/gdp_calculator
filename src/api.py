@@ -93,7 +93,7 @@ class Request():
 # Example: DataSet = NIPA, TableName = T10101, Frequency = Q, Year = 2018
 # Table Results: BEAAPI > Results > Data/Notes
 if __name__ == '__main__':
-    # Database/type specified by command ine argument.
+    # Database/type specified by command line argument.
     type = sys.argv[1]
     print('Type: {}'.format(type))
 

@@ -78,7 +78,7 @@
                   }
                 , "FixedAssets":
                   {
-                    "required": ["TableID", "Year"]
+                    "required": ["TableName", "Year"]
                   }
                 , "ITA":
                   {
