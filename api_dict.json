@@ -55,7 +55,9 @@
             "handle": "&method=GetData"
             , "parameters":
               {
-                "NIPA":
+                "required": ["UserID", "Method", "DatasetName"]
+                , "optional": ["ResultFormat"]
+                , "NIPA":
                   {
                     "required": ["TableName", "Frequency", "Year"]
                   }
