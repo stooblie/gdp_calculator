@@ -20,11 +20,35 @@
               }
           }
 
-        , "get_parameters": "&method=getparameterlist"
+        , "get_parameter_list":
+          {
+            "handle": "&method=getparameterlist"
+            , "parameters":
+              {
+                "required": ["UserID", "Method", "DatasetName"]
+                , "optional": ["ResultFormat"]
+              }
+          }
 
-        , "get_parameter_values": "&method=GetParameterValues"
+        , "get_parameter_values":
+          {
+            "handle": "&method=GetParameterValues"
+            , "parameters":
+              {
+                "required": ["UserID", "Method", "DatasetName", "ParameterName"]
+                , "optional": ["ResultFormat"]
+              }
+          }
 
-        , "get_parameter_values_filtered": "&method=GetParameterValuesFiltered"
+        , "get_parameter_values_filtered":
+          {
+            "handle": "&method=GetParameterValuesFiltered"
+            , "parameters":
+              {
+                "required": ["UserID", "Method", "DatasetName", "TargetParameter"]
+                , "optional": ["ResultFormat"]
+              }
+          }
 
         , "get_data":
           {

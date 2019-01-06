@@ -13,14 +13,24 @@ http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED',
         ca_certs=certifi.where())
 
 class Request():
+    '''
+    This class handles performing a web request for information from a specified government economic database.
 
+    :param type:
+    :param method:
+    :param parameters: A list of tuples containing parameter and value pairs.
+    '''
     def __init__(self, type, method, parameters=None, format='json'):
         #Base parameters
         self.type = type
         self.uri = api_dict[type]['uri']
-        self.method = api_dict[type]['params']['method'][method]
+        self.method = method
         self.key = '&UserID=' + os.environ[api_dict[type]['key']]
         self.format = api_dict[type]['format'][format]
+
+        self.parameters = dict(parameters)
+        self.required = api_dict[type]['method'][method]['parameters']['required']
+        self.optional = api_dict[type]['method'][method]['parameters']['optional']
 
         #Additional parameters
         #self.params = ''
@@ -38,9 +48,12 @@ class Request():
         else: pass
 
     def get_metadata(self):
-        if self.method == "list_datasets":
-        if self.method ==:
-        if self.method ==:
+        url = self.uri + self.key + self.format + self.method
+        for param, value in self.parameters:
+            url += '&{}={}'.format(param, value)
+
+        response = http.request('GET',)
+        return response
 
     def get_data(self):
         print('URL: {}'.format(self.url))
@@ -54,6 +67,12 @@ class Request():
         #output = json.loads(data)
         #return output
 
+    def check_parameters(self):
+        for req in self.required:
+            if req not in self.parameters:
+                print('Missing required parameter {}. Please supply this parameter and retry.'.format(req))
+            else: continue
+
     def display_data(self):
         data = self.get_data()
         for i in data['BEAAPI']['Results']['Dataset']:
@@ -64,15 +83,26 @@ class Request():
 # Example: DataSet = NIPA, TableName = T10101, Frequency = Q, Year = 2018
 # Table Results: BEAAPI > Results > Data/Notes
 if __name__ == '__main__':
+    # Database/type specified by command ine argument.
     type = sys.argv[1]
     print('Type: {}'.format(type))
+    # Method is a command line argument.
     method = sys.argv[2]
     print('Method: {}'.format(method))
-    if method == 'list_datasets': kwargs = {}
-    else: kwargs = {'dataset_name': sys.argv[3], 'table_name': sys.argv[4], 'frequency': sys.argv[5], 'year': sys.argv[6]}
-    print('Parameters: {}'.format(kwargs))
+    print('Example Parameters for Get Data: DataSet = NIPA, TableName = T10101, Frequency = Q, Year = 2018')
+    # Parameters defined by prompting for user keyboard input (for now).
+    parameters = list()
+    required_parameters = api_dict[type]['method'][method]['parameters']['required']
+    optional_parameters = api_dict[type]['method'][method]['parameters']['optional']
+    for param in required_parameters:
+        value = input('{} (required):'.format(param))
+        parameters.append( (param, value) )
+    for i in optional_parameters:
+        value = input('{} (optional):'.format(param))
+        parameters.append( (param, value) )
+
     #print('kwargs: {}'.format(kwargs))
-    obj = Request(type, method, **kwargs)
+    obj = Request(type, method, parameters)
     data = obj.get_data()
     data_dict = ast.literal_eval(json.dumps(data))
     #print(data_dict['BEAAPI']['Results'])
