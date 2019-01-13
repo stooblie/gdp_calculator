@@ -1,0 +1,933 @@
+{
+    "BEAAPI": {
+        "Request": {
+            "RequestParam": [
+                {
+                    "ParameterName": "YEAR",
+                    "ParameterValue": "2018"
+                },
+                {
+                    "ParameterName": "RESULTFORMAT",
+                    "ParameterValue": "JSON"
+                },
+                {
+                    "ParameterName": "FREQUENCY",
+                    "ParameterValue": "Q"
+                },
+                {
+                    "ParameterName": "DATASETNAME",
+                    "ParameterValue": "NIPA"
+                },
+                {
+                    "ParameterName": "METHOD",
+                    "ParameterValue": "GETDATA"
+                },
+                {
+                    "ParameterName": "TABLENAME",
+                    "ParameterValue": "T10101"
+                },
+                {
+                    "ParameterName": "USERID",
+                    "ParameterValue": "8AF22114-0C24-4CCE-BB7D-FD0C32B68E7F"
+                },
+                {
+                    "ParameterName": "ShowMillions",
+                    "ParameterValue": "N"
+                }
+            ]
+        },
+        "Results": {
+            "Data": [
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "2.2",
+                    "LineDescription": "Gross domestic product",
+                    "LineNumber": "1",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A191RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "4.2",
+                    "LineDescription": "Gross domestic product",
+                    "LineNumber": "1",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A191RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "3.4",
+                    "LineDescription": "Gross domestic product",
+                    "LineNumber": "1",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A191RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "0.5",
+                    "LineDescription": "Personal consumption expenditures",
+                    "LineNumber": "2",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "DPCERL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "3.8",
+                    "LineDescription": "Personal consumption expenditures",
+                    "LineNumber": "2",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "DPCERL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "3.5",
+                    "LineDescription": "Personal consumption expenditures",
+                    "LineNumber": "2",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "DPCERL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "-0.6",
+                    "LineDescription": "Goods",
+                    "LineNumber": "3",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "DGDSRL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "5.5",
+                    "LineDescription": "Goods",
+                    "LineNumber": "3",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "DGDSRL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "4.3",
+                    "LineDescription": "Goods",
+                    "LineNumber": "3",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "DGDSRL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "-2.0",
+                    "LineDescription": "Durable goods",
+                    "LineNumber": "4",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "DDURRL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "8.6",
+                    "LineDescription": "Durable goods",
+                    "LineNumber": "4",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "DDURRL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "3.7",
+                    "LineDescription": "Durable goods",
+                    "LineNumber": "4",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "DDURRL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "0.1",
+                    "LineDescription": "Nondurable goods",
+                    "LineNumber": "5",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "DNDGRL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "4.0",
+                    "LineDescription": "Nondurable goods",
+                    "LineNumber": "5",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "DNDGRL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "4.6",
+                    "LineDescription": "Nondurable goods",
+                    "LineNumber": "5",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "DNDGRL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "1.0",
+                    "LineDescription": "Services",
+                    "LineNumber": "6",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "DSERRL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "3.0",
+                    "LineDescription": "Services",
+                    "LineNumber": "6",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "DSERRL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "3.2",
+                    "LineDescription": "Services",
+                    "LineNumber": "6",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "DSERRL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "9.6",
+                    "LineDescription": "Gross private domestic investment",
+                    "LineNumber": "7",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A006RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "-0.5",
+                    "LineDescription": "Gross private domestic investment",
+                    "LineNumber": "7",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A006RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "15.2",
+                    "LineDescription": "Gross private domestic investment",
+                    "LineNumber": "7",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A006RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "8.0",
+                    "LineDescription": "Fixed investment",
+                    "LineNumber": "8",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A007RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "6.4",
+                    "LineDescription": "Fixed investment",
+                    "LineNumber": "8",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A007RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "1.1",
+                    "LineDescription": "Fixed investment",
+                    "LineNumber": "8",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A007RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "11.5",
+                    "LineDescription": "Nonresidential",
+                    "LineNumber": "9",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A008RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "8.7",
+                    "LineDescription": "Nonresidential",
+                    "LineNumber": "9",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A008RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "2.5",
+                    "LineDescription": "Nonresidential",
+                    "LineNumber": "9",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A008RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "13.9",
+                    "LineDescription": "Structures",
+                    "LineNumber": "10",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A009RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "14.5",
+                    "LineDescription": "Structures",
+                    "LineNumber": "10",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A009RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "-3.4",
+                    "LineDescription": "Structures",
+                    "LineNumber": "10",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A009RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "8.5",
+                    "LineDescription": "Equipment",
+                    "LineNumber": "11",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "Y033RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "4.6",
+                    "LineDescription": "Equipment",
+                    "LineNumber": "11",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "Y033RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "3.4",
+                    "LineDescription": "Equipment",
+                    "LineNumber": "11",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "Y033RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "14.1",
+                    "LineDescription": "Intellectual property products",
+                    "LineNumber": "12",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "Y001RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "10.5",
+                    "LineDescription": "Intellectual property products",
+                    "LineNumber": "12",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "Y001RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "5.6",
+                    "LineDescription": "Intellectual property products",
+                    "LineNumber": "12",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "Y001RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "-3.4",
+                    "LineDescription": "Residential",
+                    "LineNumber": "13",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A011RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "-1.3",
+                    "LineDescription": "Residential",
+                    "LineNumber": "13",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A011RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "-3.6",
+                    "LineDescription": "Residential",
+                    "LineNumber": "13",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A011RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "3.6",
+                    "LineDescription": "Exports",
+                    "LineNumber": "16",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A020RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "9.3",
+                    "LineDescription": "Exports",
+                    "LineNumber": "16",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A020RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "-4.9",
+                    "LineDescription": "Exports",
+                    "LineNumber": "16",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A020RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "3.2",
+                    "LineDescription": "Goods",
+                    "LineNumber": "17",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A253RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "13.5",
+                    "LineDescription": "Goods",
+                    "LineNumber": "17",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A253RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "-8.4",
+                    "LineDescription": "Goods",
+                    "LineNumber": "17",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A253RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "4.2",
+                    "LineDescription": "Services",
+                    "LineNumber": "18",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A646RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "1.5",
+                    "LineDescription": "Services",
+                    "LineNumber": "18",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A646RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "2.4",
+                    "LineDescription": "Services",
+                    "LineNumber": "18",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A646RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "3.0",
+                    "LineDescription": "Imports",
+                    "LineNumber": "19",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A021RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "-0.6",
+                    "LineDescription": "Imports",
+                    "LineNumber": "19",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A021RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "9.3",
+                    "LineDescription": "Imports",
+                    "LineNumber": "19",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A021RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "2.4",
+                    "LineDescription": "Goods",
+                    "LineNumber": "20",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A255RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "-0.4",
+                    "LineDescription": "Goods",
+                    "LineNumber": "20",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A255RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "10.5",
+                    "LineDescription": "Goods",
+                    "LineNumber": "20",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A255RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "5.5",
+                    "LineDescription": "Services",
+                    "LineNumber": "21",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A656RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "-1.4",
+                    "LineDescription": "Services",
+                    "LineNumber": "21",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A656RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "4.3",
+                    "LineDescription": "Services",
+                    "LineNumber": "21",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A656RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "1.5",
+                    "LineDescription": "Government consumption expenditures and gross investment",
+                    "LineNumber": "22",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A822RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "2.5",
+                    "LineDescription": "Government consumption expenditures and gross investment",
+                    "LineNumber": "22",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A822RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "2.6",
+                    "LineDescription": "Government consumption expenditures and gross investment",
+                    "LineNumber": "22",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A822RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "2.6",
+                    "LineDescription": "Federal",
+                    "LineNumber": "23",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A823RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "3.7",
+                    "LineDescription": "Federal",
+                    "LineNumber": "23",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A823RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "3.5",
+                    "LineDescription": "Federal",
+                    "LineNumber": "23",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A823RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "3.0",
+                    "LineDescription": "National defense",
+                    "LineNumber": "24",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A824RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "5.9",
+                    "LineDescription": "National defense",
+                    "LineNumber": "24",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A824RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "4.9",
+                    "LineDescription": "National defense",
+                    "LineNumber": "24",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A824RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "2.1",
+                    "LineDescription": "Nondefense",
+                    "LineNumber": "25",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A825RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "0.5",
+                    "LineDescription": "Nondefense",
+                    "LineNumber": "25",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A825RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "1.6",
+                    "LineDescription": "Nondefense",
+                    "LineNumber": "25",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A825RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "0.9",
+                    "LineDescription": "State and local",
+                    "LineNumber": "26",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A829RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "1.8",
+                    "LineDescription": "State and local",
+                    "LineNumber": "26",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A829RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "2.0",
+                    "LineDescription": "State and local",
+                    "LineNumber": "26",
+                    "METRIC_NAME": "Fisher Quantity Index",
+                    "SeriesCode": "A829RL",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "4.3",
+                    "LineDescription": "Gross domestic product, current dollars",
+                    "LineNumber": "27",
+                    "METRIC_NAME": "Current Dollars",
+                    "SeriesCode": "A191RP",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q1",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "7.6",
+                    "LineDescription": "Gross domestic product, current dollars",
+                    "LineNumber": "27",
+                    "METRIC_NAME": "Current Dollars",
+                    "SeriesCode": "A191RP",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q2",
+                    "UNIT_MULT": "0"
+                },
+                {
+                    "CL_UNIT": "Percent change, annual rate",
+                    "DataValue": "4.9",
+                    "LineDescription": "Gross domestic product, current dollars",
+                    "LineNumber": "27",
+                    "METRIC_NAME": "Current Dollars",
+                    "SeriesCode": "A191RP",
+                    "TableName": "T10101",
+                    "TimePeriod": "2018Q3",
+                    "UNIT_MULT": "0"
+                }
+            ],
+            "Dimensions": [
+                {
+                    "DataType": "string",
+                    "IsValue": "0",
+                    "Name": "TableName",
+                    "Ordinal": "1"
+                },
+                {
+                    "DataType": "string",
+                    "IsValue": "0",
+                    "Name": "SeriesCode",
+                    "Ordinal": "2"
+                },
+                {
+                    "DataType": "numeric",
+                    "IsValue": "0",
+                    "Name": "LineNumber",
+                    "Ordinal": "3"
+                },
+                {
+                    "DataType": "string",
+                    "IsValue": "0",
+                    "Name": "LineDescription",
+                    "Ordinal": "4"
+                },
+                {
+                    "DataType": "string",
+                    "IsValue": "0",
+                    "Name": "TimePeriod",
+                    "Ordinal": "5"
+                },
+                {
+                    "DataType": "string",
+                    "IsValue": "0",
+                    "Name": "CL_UNIT",
+                    "Ordinal": "6"
+                },
+                {
+                    "DataType": "numeric",
+                    "IsValue": "0",
+                    "Name": "UNIT_MULT",
+                    "Ordinal": "7"
+                },
+                {
+                    "DataType": "string",
+                    "IsValue": "0",
+                    "Name": "METRIC_NAME",
+                    "Ordinal": "8"
+                },
+                {
+                    "DataType": "numeric",
+                    "IsValue": "1",
+                    "Name": "DataValue",
+                    "Ordinal": "9"
+                }
+            ],
+            "Notes": [
+                {
+                    "NoteRef": "T10101",
+                    "NoteText": "Table 1.1.1. Percent Change From Preceding Period in Real Gross Domestic Product [Percent] - LastRevised: December 21, 2018"
+                }
+            ],
+            "Statistic": "NIPA Table",
+            "UTCProductionTime": "2019-01-13T21:05:30.053"
+        }
+    }
+}
