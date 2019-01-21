@@ -1,0 +1,141 @@
+{
+  "data":
+    {
+      "equities":
+        {
+          "prices_volumes":
+          , "fundamentals":
+          , "sentiment":
+          , "derived_metrics":
+        }
+      , "currencies":
+        {
+          "prices_volumes":
+          , "national_statistics":
+        }
+      , "interest_rates_fixed_income":
+        {
+          "prices_volumes":
+          , "national_statistics":
+          , "others":
+        }
+      , "options":
+        {
+          "prices_volumes":
+          , "fundamentals":
+        }
+
+      , "indexes":
+        {
+          "prices_volumes":
+          , "fundamentals":
+          , "national_statistics":
+        }
+      , "mutual_funds_etfs":
+        {
+          "prices_volumes":
+          , "fundamentals":
+        }
+      , "real_estate":
+        {
+          "national_statistics":
+        }
+      , "vc_private_equity":
+        {
+          "others":
+        }
+      , "economy":
+        {
+          "prices_volumes":
+          , "fundamentals":
+          , "sentiment":
+          , "national_statistics":
+          , "others":
+        }
+      , "energy":
+        {
+          "prices_volumes":
+          , "fundamentals":
+          , "national_statistics":
+          , "others":
+        }
+      , "agriculture":
+        {
+          "prices_volumes":
+          , "fundamentals":
+          , "national_statistics":
+        }
+      , "metals":
+        {
+          "prices_volumes":
+          , "fundamentals":
+          , "national_statistics":
+        }
+      , "futures":
+        {
+          "prices_volumes":
+          , "fundamentals":
+        }
+      , "other":
+        {
+          "prices_volumes":
+          , "others":
+        }
+    }
+  , "sources":
+    {
+      "quandl":
+        {
+          "wiki_continuous_futures":
+            {
+              "desc": "Wiki Continuous Futures"
+              , "code": "CHRIS"
+              , "data_metadata_separate": 0
+              , "format_type": "underscore"
+              , "format": "1_23"
+              , "parameters": ["exchange", "code", "number"]
+            }
+
+          , "fred":
+            {
+              "desc": "Federal Reserve Economic Data"
+              , "code": "FRED"
+              , "data_metadata_separate": 0
+              , "format_type": "direct"
+              , "format": "1"
+              , "parameters": ["code"]
+            }
+
+          , "lbma":
+            {
+              "desc": "London Bullion Market Association"
+              , "code": "LBMA"
+              , "data_metadata_separate": 0
+              , "format_type": "direct"
+              , "format": "1"
+              , "parameters": ["GOLD"]
+            }
+
+          , "yde":
+            {
+              "desc": "Yale Department of Economics"
+            , "code": "YALE"
+            , "data_metadata_separate": 0
+            , "format_type": "direct"
+            , "format": "1"
+            , "parameters": ["GOLD"]
+          }
+
+        }
+      , "ausbs":
+        {
+          "title": "Australian Burea of Statistics"
+          , "overview": "The Australian Burea of Statistics (AUSBS) data feed contains economic, environmental, and social issues statistics from the Australian Bureau of Statistics."
+          , "code": "AUSBS"
+          , "code_data": "/D"
+          , "code_metadata": "/M"
+          , "data_parameters": ["series_id", "date", "value"]
+          , "metadata_parameters": ["series_id", "name", "units", "type", "month"]
+        }
+    }
+}
