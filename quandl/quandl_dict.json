@@ -1,85 +1,91 @@
 {
-  "data":
+  "base_uri":
+    {
+      "data": "https://www.quandl.com/api/v3/datatables/{datatable_code}.{format}?{filter_criteria}"
+      , "metadata": "https://www.quandl.com/api/v3/datatables/{datatable_code}/metadata"
+      , "parameters": ["api_key", "start_date", "end_date"]
+    }
+  , "data":
     {
       "equities":
         {
-          "prices_volumes":
-          , "fundamentals":
-          , "sentiment":
-          , "derived_metrics":
+          "prices_volumes": null
+          , "fundamentals": null
+          , "sentiment": null
+          , "derived_metrics": null
         }
       , "currencies":
         {
-          "prices_volumes":
-          , "national_statistics":
+          "prices_volumes": null
+          , "national_statistics": null
         }
       , "interest_rates_fixed_income":
         {
-          "prices_volumes":
-          , "national_statistics":
-          , "others":
+          "prices_volumes": null
+          , "national_statistics": null
+          , "others": null
         }
       , "options":
         {
-          "prices_volumes":
-          , "fundamentals":
+          "prices_volumes": null
+          , "fundamentals": null
         }
 
       , "indexes":
         {
-          "prices_volumes":
-          , "fundamentals":
-          , "national_statistics":
+          "prices_volumes": null
+          , "fundamentals": null
+          , "national_statistics": null
         }
       , "mutual_funds_etfs":
         {
-          "prices_volumes":
-          , "fundamentals":
+          "prices_volumes": null
+          , "fundamentals": null
         }
       , "real_estate":
         {
-          "national_statistics":
+          "national_statistics": null
         }
       , "vc_private_equity":
         {
-          "others":
+          "others": null
         }
       , "economy":
         {
-          "prices_volumes":
-          , "fundamentals":
-          , "sentiment":
-          , "national_statistics":
-          , "others":
+          "prices_volumes": null
+          , "fundamentals": null
+          , "sentiment": null
+          , "national_statistics": null
+          , "others": null
         }
       , "energy":
         {
-          "prices_volumes":
-          , "fundamentals":
-          , "national_statistics":
-          , "others":
+          "prices_volumes": null
+          , "fundamentals": null
+          , "national_statistics": null
+          , "others": null
         }
       , "agriculture":
         {
-          "prices_volumes":
-          , "fundamentals":
-          , "national_statistics":
+          "prices_volumes": null
+          , "fundamentals": null
+          , "national_statistics": null
         }
       , "metals":
         {
-          "prices_volumes":
-          , "fundamentals":
-          , "national_statistics":
+          "prices_volumes": null
+          , "fundamentals": null
+          , "national_statistics": null
         }
       , "futures":
         {
-          "prices_volumes":
-          , "fundamentals":
+          "prices_volumes": null
+          , "fundamentals": null
         }
       , "other":
         {
-          "prices_volumes":
-          , "others":
+          "prices_volumes": null
+          , "others": null
         }
     }
   , "sources":
@@ -106,6 +112,16 @@
               , "parameters": ["code"]
             }
 
+            , "imf":
+              {
+                "desc": "IMF Cross Country Macroeconomic Statistics"
+                , "code": "ODA"
+                , "data_metadata_separate": 0
+                , "format_type": "underscore"
+                , "format": "ODA/{COUNTRY}_{INDICATOR}"
+                , "parameters": ["{COUNTRY}", "{INDICATOR}"]
+              }
+
           , "lbma":
             {
               "desc": "London Bullion Market Association"
@@ -119,12 +135,152 @@
           , "yde":
             {
               "desc": "Yale Department of Economics"
-            , "code": "YALE"
-            , "data_metadata_separate": 0
-            , "format_type": "direct"
-            , "format": "1"
-            , "parameters": ["GOLD"]
-          }
+              , "code": "YALE"
+              , "data_metadata_separate": 0
+              , "format_type": "direct"
+              , "format": "1"
+              , "parameters": ["{CODE}"]
+            }
+
+          , "sp500":
+            {
+              "desc": "S&P 500 Ratios"
+              , "code": "SP500"
+              , "data_metadata_separate": 0
+              , "format_type": "direct"
+              , "format": "1"
+              , "parameters": ["{CODE}"]
+            }
+
+          , "bis":
+            {
+              "desc": "Bank for International Settlements"
+              , "code": "BIS"
+              , "data_metadata_separate": 0
+              , "format_type": "underscore"
+              , "format": "multiple"
+              , "parameters": ["{CODE}"]
+            }
+
+          , "fmac":
+            {
+              "desc": "Freddie Mac"
+              , "code": "FMAC"
+              , "data_metadata_separate": 0
+              , "format_type": "underscore"
+              , "format": ["1", "2_3"]
+              , "parameters": ["{Code}", "HPI", "Area Code"]
+            }
+
+          , "ust":
+              {
+                "desc": "US Treasury"
+                , "code": "USTREASURY"
+                , "data_metadata_separate": 0
+                , "format_type": "direct"
+                , "format": "1"
+                , "parameters": ["{CODE}"]
+              }
+
+            , "cby":
+                {
+                  "desc": "Corporate Bond Yield Rates"
+                  , "code": "ML"
+                  , "data_metadata_separate": 0
+                  , "format_type": "direct"
+                  , "format": "1"
+                  , "parameters": ["{CODE}"]
+                }
+
+            , "blsi":
+                {
+                  "desc": "BLS Inflation & Prices"
+                  , "code": "BLSI"
+                  , "data_metadata_separate": 0
+                  , "format_type": "string"
+                  , "format": "1{multiple}"
+                  , "parameters": ["AP", "CU", "CW", "WP"]
+                }
+
+              , "bmac":
+                  {
+                    "desc": "The Economist - Big Mac Index"
+                    , "code": "BIGMAC"
+                    , "data_metadata_separate": 0
+                    , "format_type": "underscore"
+                    , "format": "BIGMAC_{country}"
+                    , "parameters": ["{country}"]
+                  }
+
+              , "aaii":
+                  {
+                    "desc": "Investor Sentiment"
+                    , "code": "AAII"
+                    , "data_metadata_separate": 0
+                    , "format_type": "underscore"
+                    , "format": "AAII_SENTIMENT"
+                    , "parameters": []
+                  }
+
+              , "rici":
+                  {
+                    "desc": "Commodity Indices"
+                    , "code": "RICI"
+                    , "data_metadata_separate": 0
+                    , "format_type": "direct"
+                    , "format": "RICI/{table}"
+                    , "parameters": ["RICI", "RICIE", "RICIM", "RICIA"]
+                  }
+
+              , "blse":
+                  {
+                    "desc": "BLS Employment & Unemployment"
+                    , "code": "BLSE"
+                    , "data_metadata_separate": 0
+                    , "format_type": "direct"
+                    , "format": "{code}"
+                    , "parameters": ["{code}"]
+                  }
+
+              , "blsp":
+                  {
+                    "desc": "BLS Productivity"
+                    , "code": "BLSP"
+                    , "data_metadata_separate": 0
+                    , "format_type": "direct"
+                    , "format": "PR{SA}{SECTOR}6{MEASURE}{DURATION}"
+                    , "parameters": ["{code}"]
+                  }
+
+              , "eureka":
+                  {
+                    "desc": "Eurekahegde"
+                    , "code": "EUREKA"
+                    , "data_metadata_separate": 0
+                    , "format_type": "direct"
+                    , "format": "{code}"
+                    , "parameters": ["{code}"]
+                  }
+
+              , "fdic":
+                  {
+                    "desc": "Federal Deposit Insurance Corporation"
+                    , "code": "FDIC"
+                    , "data_metadata_separate": 0
+                    , "format_type": "underscore"
+                    , "format": "FDIC/{REPORT TYPE CODE}_{AREA CODE}"
+                    , "parameters": ["{REPORT TYPE CODE}", "{AREA CODE}"]
+                  }
+
+              , "perth":
+                  {
+                    "desc": "Perth Mint"
+                    , "code": "PERTH"
+                    , "data_metadata_separate": 0
+                    , "format_type": "direct"
+                    , "format": "{code}"
+                    , "parameters": ["{code}"]
+                  }
 
         }
       , "ausbs":
