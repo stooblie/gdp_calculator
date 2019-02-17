@@ -2,7 +2,7 @@
   "base_uri":
     {
       "data": "https://www.quandl.com/api/v3/datatables/{datatable_code}.{format}?{filter_criteria}"
-      , "metadata": "https://www.quandl.com/api/v3/datatables/{datatable_code}/metadata"
+      , "metadata": "https://www.quandl.com/api/v3/datatables/{datatable_code}/metadata.{format}"
       , "parameters": ["api_key", "start_date", "end_date"]
     }
   , "data":
