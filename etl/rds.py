@@ -14,5 +14,7 @@ conn = psycopg2.connect(host=rds_host,
 
 cur = conn.cursor()
 
+conn.close()
+
 if __name__ == '__main__':
     print('Success')
