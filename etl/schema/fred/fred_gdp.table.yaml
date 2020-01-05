@@ -1,0 +1,9 @@
+descr: Real Gross Domestic Product - United States
+primary_key: ['Date', 'Type']
+fields:
+  - name: Date
+    type: date
+  - name: Value
+    type: integer
+  - name: Type
+    type: varchar(64)

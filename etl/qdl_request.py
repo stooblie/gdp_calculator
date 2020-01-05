@@ -30,7 +30,7 @@ class Request():
         return data
 
     def get_ts_data(self):
-        '''Make a data request'''
+        '''Make a time series data request'''
         data = quandl.get(self.datatable_code, **self.parameters)
         return data
 
@@ -46,7 +46,7 @@ class Request():
 
 if __name__ == '__main__':
     code = 'MER/F1'
-    params = {'start_date': "2003-12-31", 'end_date': "2005-12-31"}
+    #params = {'start_date': "2003-12-31", 'end_date': "2005-12-31"}
 
     test = Request(datatable_code=code, parameters=params, type='data')
 
